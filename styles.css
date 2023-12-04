@@ -1,38 +1,30 @@
-*{
-	margin: 100px;
-	display: felx;
-	justify-content: center;
-	align-items: center;
-}
-
 .star {
-	position: relative;
-/* 	display: inline-block; */
-/* 	width:0;
-	height:0; */
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 70px solid yellow;
-	transform: rotate(35deg)
-}
-.star::before {
-	position: absolute;
-	content: '';
-	top: -45px;
-	left: -65px;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 80px solid yellow;
-	transform: rotate(-35deg);
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid yellow;
 }
 
+.star::before,
 .star::after {
-	position: absolute;
-	content: '';
-	top: 3px;
-	left: -105px;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 70px solid yellow;
-	transform: rotate(-70deg);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
 }
+
+.star::before {
+  top: 60px;
+	left:-90px;
+  border-top: 200px solid yellow;
+}
+
+/* .star::after {
+  top: 5px;
+  transform: rotate(180deg);
+  border-bottom: 80px solid blue;
+} */
