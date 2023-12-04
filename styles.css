@@ -1,30 +1,38 @@
+*{
+	margin: 100px;
+	display: felx;
+	justify-content: center;
+	align-items: center;
+}
+
 .star {
-  position: relative;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  border-bottom: 70px solid yellow;
-  margin-top: 20px; /* Adjust this value to position the star */
+	position: relative;
+/* 	display: inline-block; */
+/* 	width:0;
+	height:0; */
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 70px solid yellow;
+	transform: rotate(35deg)
 }
-
-.star::before,
-.star::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  border-top: 70px solid yellow;
-  transform: rotate(180deg);
-}
-
 .star::before {
-  top: -45px;
+	position: absolute;
+	content: '';
+	top: -45px;
+	left: -65px;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 80px solid yellow;
+	transform: rotate(-35deg);
 }
 
 .star::after {
-  top: -25px;
+	position: absolute;
+	content: '';
+	top: 3px;
+	left: -105px;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 70px solid yellow;
+	transform: rotate(-70deg);
 }
